@@ -1,38 +1,209 @@
 .App {
-  text-align: center;
+  background-image: url("./bg.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  margin-left :10px;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header .search {
+  margin-top: 10px;
+  float: right;
+  padding-top: 10px;
+  background: black;
+  padding:10px;
+  border-radius: 50%;
+
+}
+
+.MainContainer {
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.125;
+  letter-spacing: normal;
+  color: #fff;
+  padding-left: 50px;
+  margin: 0 0 16px;
+}
+
+.description {
+  font-family: Helvetica Neue LT W05_45 Light;
+  font-size: 16px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: .4px;
+  color: #fff;
+  margin: 0;
+  max-width: 460px;
+  padding-left: 50px;
+}
+.BookContent {
+  margin-top: 60px;
+}
+
+.title {
+  font-family: Helvetica Neue LT W05_65 Medium;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  margin-left: 50px;
+  color: #ffffff;
+}
+.list {
+  margin-left: 40px;
+}
+
+.image {
+  position: relative; 
+  width: 100%;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute; 
+  top: 300px; 
+  left: 5px; 
+  width: 100%; 
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  border-radius: 8px;
+  width: 250px;
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.bookname {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -.2px;
+  color: #fff;
+  max-width: 100%;
+  margin: 0 0 7px;
+  font-style: bold;
+}
+
+.author {
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: .4px;
+  color: hsla(0,0%,100%,.9);
+}
+
+.publisher {
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: .4px;
+  color: hsla(0,0%,100%,.9);
+}
+
+.rating {
+  background: #003366;
+  opacity: 0.90;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: .2px;
+  position: absolute;
+}
+
+.book-details {
+  margin-top: 30px;
+}
+
+.book-name {
+  font-size: 40px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: .6px;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 0;
+  max-width: 360px;
+  text-align: left;
+}
+
+.book-img {
+  width: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.Add {
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+  background: grey;
+}
+
+.book-author {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+   margin-bottom: 2px;
+}
+
+.book-publisher {
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: .43px;
+  color: hsla(0,0%,100%,.6);
+}
+
+.book-description {
+  font-family: Helvetica Neue LT W05_45 Light;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: .4px;
+  color: hsla(0,0%,100%,.7);
+  word-break: break-word;
 }
